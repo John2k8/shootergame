@@ -2,6 +2,11 @@ from pygame import *
 from random import randint
 from time import time as timer 
 #loading font functions separately
+
+
+
+# Hello Phú Thầy Stephen Viết note đây
+
 font.init()
 font1 = font.Font(None, 80)
 win = font1.render('YOU WIN!', True, (255, 255, 255))
