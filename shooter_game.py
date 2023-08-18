@@ -6,7 +6,7 @@ from time import time as timer
 
 
 
-# Hello Phú Thầy Stephen Viết note đây
+
 
 font.init()
 font1 = font.Font(None, 80)
@@ -17,11 +17,6 @@ lose = font1.render('YOU LOSE!', True, (180, 0, 0))
 font2 = font.Font(None, 36)
 
 
-#backgournd music
-mixer.init()
-mixer.music.load('space.ogg')
-mixer.music.play()
-fire_sound = mixer.Sound('fire.ogg')
 
 
 #we need the following images:
@@ -125,7 +120,7 @@ while run:
         elif e.type == KEYDOWN:
             if e.key == K_SPACE:
                 if num_fire < 10 and rel_time == False:
-                    fire_sound.play()
+                    # fire_sound.play()
                     num_fire += 1
                     ship.fire()
                 if num_fire >= 5 and rel_time == False:
