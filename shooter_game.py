@@ -4,10 +4,6 @@ from time import time as timer
 #loading font functions separately
 
 
-
-
-
-
 font.init()
 font1 = font.Font(None, 80)
 win = font1.render('YOU WIN!', True, (255, 255, 255))
@@ -120,7 +116,7 @@ while run:
         elif e.type == KEYDOWN:
             if e.key == K_SPACE:
                 if num_fire < 10 and rel_time == False:
-                    # fire_sound.play()
+                    
                     num_fire += 1
                     ship.fire()
                 if num_fire >= 5 and rel_time == False:
